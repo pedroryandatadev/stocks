@@ -1,10 +1,32 @@
 import requests
 from dotenv import load_dotenv
 import os
+import streamlit as st
 
-load_dotenv()
-get_moeda_key = os.getenv('get_moeda_key')  # Chave da API para obter as moedas disponíveis
-converter_moeda_key = os.getenv('converter_moeda_key')  # Chave da API para converter moedas
+# Função para carregar as configurações da API
+# Verifica se o aplicativo está sendo executado no Streamlit Cloud ou localmente
+def load_config():
+    
+    if 'api' in st.secrets:
+        # Está no Streamlit Cloud (st.secrets tem a seção [api])
+        config = {
+            'get_moeda_key': st.secrets['api']['get_moeda_key'], # Chave da API para obter as moedas registrada no secrets
+            'converter_moeda_key': st.secrets['api']['converter_moeda_key'] # Chave da API para converter moedas registrada no secrets
+        }
+    else:
+        # Está local (carrega do .env)
+        load_dotenv()
+        config = {
+            'get_moeda_key': os.getenv('get_moeda_key'), # Chave da API para obter as moedas disponíveis
+            'converter_moeda_key': os.getenv('converter_moeda_key') # Chave da API para converter moedas
+        }
+    
+    return config
+
+config = load_config()
+
+get_moeda_key = config['get_moeda_key']
+converter_moeda_key = config['converter_moeda_key']
 
 # Função para obter todas as moedas disponíveis na API para poder ter mais variedade de escolha
 def obter_moedas():
