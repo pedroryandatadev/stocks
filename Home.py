@@ -1,5 +1,5 @@
 from app.moedas_api import obter_moedas, converter_moeda
-from app.acoes_yfinance import get_stock_data
+from app.acoes_api import get_stock_data
 import streamlit as st
 
 st.set_page_config(page_title='Ações', page_icon='img//icon-grafico.ico', layout='wide')
@@ -38,7 +38,7 @@ with st.container():
     st.title('Consulta de Ações')
 
     st.write('Este aplicativo permite consultar o histórico de preços de ações e calcular o retorno de investimentos.')
-    st.write('Os valores de cotação e gráficos retornam na moeda original em que a ação está cadastrada, caso consulte a AAPL(ação da Apple) os valores retornam em dólar, se consultar a PETR4.SA(ação da Petrobras) os valores retornam em real brasileiro.')
+    st.write('Os valores de cotação e gráficos retornam na moeda original em que a ação está cadastrada, caso consulte a AAPL(ação da Apple) os valores retornam em dólar USD, se consultar a PETR4.SA(ação da Petrobras) os valores retornam em real brasileiro.')
 
     col1, col2, col3 = st.columns([2, 1, 1])  
     # Primeira linha de inputs seleção de ação, data de início e data de fim

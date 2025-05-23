@@ -12,9 +12,9 @@ Nesse projeto existem blocos de comparação de valores e gráficos de progresso
 
 # APi & Dados
 
-Foram utilizados duas fontes de dados sendo elas a biblioteca `yfinance` do yahoo para uso das ações, para as moedas a api do `Exchangerate-API`.
+Foram utilizados duas fontes de dados sendo elas a api `alphavantage` para obter dados de ações, para as moedas a api do `Exchangerate-API`.
 
-- Documentação da biblioteca [yfinance](https://pypi.org/project/yfinance/).
+- Documentação da Api [AlphaVantage](https://www.alphavantage.co/documentation/)
 
 - Documentação da Api [Exchangerate-API](https://www.exchangerate-api.com/docs/overview)
 
@@ -33,9 +33,11 @@ Foram utilizados duas fontes de dados sendo elas a biblioteca `yfinance` do yaho
   <img src="previews/preview-fuction.png" alt="Funções" >
 </p>
 
+> **Nota:** Os dados exibidos na imagem da interface podem diferir dos valores atuais, pois a fonte de dados das ações foi alterada após a captura da imagem.
+
 # Requerimentos
 
-Uso das bibliotecas `requests`, `yfinance` e `streamlit`.
+Uso das bibliotecas `requests`, `pandas` e `streamlit`.
 
 Instalação pode ser feita pelo requirements.txt para evitar conflitos de versões:
 
@@ -45,6 +47,12 @@ Instalação pode ser feita pelo requirements.txt para evitar conflitos de vers�
 
 ```
 
-### Créditos
+## Licença
 
-> Desenvolvimento e design por [pedroryandatadev (Pedro Ryan)](https://github.com/pedroryandatadev) 
+```
+Desenvolvimento e design em 2025 por pedroryandatadev (Pedro Ryan)
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
+```
+
+> **Observação:** As informações exibidas neste projeto são provenientes das APIs utilizadas e podem não refletir com exatidão os valores reais do mercado financeiro.
