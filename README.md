@@ -2,9 +2,24 @@
   <img src="img/logo-consulta-acoes.png" alt="Consulto logo" width="300">
 </p>
 
+<p align="center">
+    <img src="https://img.shields.io/badge/Streamlit-Enabled-brightgreen" alt="Streamlit Enabled">
+    <img src="https://img.shields.io/badge/Request-ocean?label=API&color=%237fb8b0
+    " alt="API Request">   
+    <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python Version">
+    <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"><br>
+    <a href="https://share.streamlit.io/user/pedroryandatadev"><img alt="Profile-Streamlit" src="https://img.shields.io/badge/Pedro%20Ryan-red?logo=Streamlit&label=Streamlit"/></a>
+    <a href="https://www.figma.com/@pedroryandata"><img alt="Profile-Figma" src="https://img.shields.io/badge/Pedro%20Ryan-%23AA5EE8?logo=figma&logoColor=white&label=Figma"/></a>
+</p>
+
+O objetivo deste projeto é consultar dados de empresas do mercado de ações, visualizar seu desempenho e calcular valores de investimento de acordo com as especificações definidas.
+
 Esse projeto realiza a visualização de valores e do desempenho de ações de acordo com o período de tempo especificado.
 
 Nesse projeto existem blocos de comparação de valores e gráficos de progresso e comparação, além de um calculador de investimento.
+
+> [!IMPORTANT]
+> As informações exibidas neste projeto são provenientes das APIs utilizadas e podem não refletir com exatidão os valores reais do mercado financeiro.
 
 <p align="center">
   <img src="previews/preview-interface.png" alt="Interface do projeto" >
@@ -33,7 +48,8 @@ Foram utilizados duas fontes de dados sendo elas a api `alphavantage` para obter
   <img src="previews/preview-fuction.png" alt="Funções" >
 </p>
 
-> **Nota:** Os dados exibidos na imagem da interface podem diferir dos valores atuais, pois a fonte de dados das ações foi alterada após a captura da imagem.
+> [!NOTE]
+> Os dados exibidos na imagem da interface podem diferir dos valores atuais, pois a fonte de dados das ações foi alterada após a captura da imagem.
 
 # Requerimentos
 
@@ -54,5 +70,3 @@ Desenvolvimento e design em 2025 por pedroryandatadev (Pedro Ryan)
 
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
 ```
-
-> **Observação:** As informações exibidas neste projeto são provenientes das APIs utilizadas e podem não refletir com exatidão os valores reais do mercado financeiro.
