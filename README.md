@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Streamlit-Enabled-brightgreen" alt="Streamlit Enabled">
-    <img src="https://img.shields.io/badge/%2B2-blue?label=API&color=orange" alt="API +2">   
+    <img src="https://img.shields.io/badge/Request-orange?label=API" alt="API Request">   
     <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python Version">
     <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License"><br>
     <a href="https://share.streamlit.io/user/pedroryandatadev"><img alt="Profile-Streamlit" src="https://img.shields.io/badge/Pedro%20Ryan-red?logo=Streamlit&label=Streamlit"/></a>
